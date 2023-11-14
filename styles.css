@@ -22,11 +22,13 @@ li {
 }
 
 .attribution {
-  font-size: 11px;
+  padding: 10px;
+  color: var(--white);
+  font-size: 16px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(228, 100%, 76%);
 }
 .btn {
   background-color: var(--darkSlateGrey);
@@ -62,8 +64,12 @@ li {
   color: var(--darkSlateGrey);
   padding-bottom: 50px;
 }
+.email--address {
+  font-weight: 700;
+}
 .form--label {
   font-weight: 700;
+  width: 100%;
 }
 .hidden {
   display: none;
@@ -73,9 +79,19 @@ li {
 }
 .input--field {
   padding: 15px;
-  width: 100%;
+  width: 95%;
   border-radius: 10px;
   margin-top: 25px;
+  transition: 0.2s;
+}
+.invalid {
+  background: rgba(255, 98, 87, 0.3);
+  opacity: 0.3;
+  border: 3px solid var(--tomato);
+}
+.invalid--email {
+  color: var(--tomato);
+  float: right;
 }
 .list-item {
   padding-bottom: 20px;
@@ -96,10 +112,8 @@ li {
   border-radius: inherit;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
+  width: 100%;
 }
 .modal-icon {
   width: 75px;
-}
-.user-email {
-  font-weight: 700;
 }

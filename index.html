@@ -3,8 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -57,12 +55,19 @@
             </ul>
           </div>
           <div class="form--container">
-            <p class="form--label">Email address</p>
+            <span class="form--label"
+              ><p>
+                Email address<span class="hidden invalid--email"
+                  >Invalid Email</span
+                >
+              </p></span
+            >
             <input
               type="email"
               name="emailAddress"
               placeholder="email@company.com"
               class="input--field"
+              id="userEmail"
             />
             <button class="btn submit">Subscribe to monthly newsletter</button>
           </div>
@@ -83,8 +88,8 @@
         <span><p class="content--heading">Thanks for subscribing!</p></span>
         <span
           ><p>
-            A confirmation email has been sent to email@company.com
-            <span class="user-email"></span>. Please open it and click the
+            A confirmation email has been sent to
+            <span class="email--address"></span>. Please open it and click the
             button inside to confirm your subscription.
           </p></span
         ><button class="btn dismiss">Dismiss Message</button>
