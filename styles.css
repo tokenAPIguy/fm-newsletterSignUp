@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+}
+:root {
+  /* Colors */
+  --tomato: hsl(4, 100%, 67%);
+  --darkSlateGrey: hsl(234, 29%, 20%);
+  --charcoalGrey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--darkSlateGrey);
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style-type: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 2fr 1fr;
+  background-color: var(--white);
+  border-radius: 25px;
+  padding: 25px;
+}
+.content--heading {
+  font-size: 72px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+.content--subheading {
+  padding-bottom: 25px;
+}
+.content--body {
+  color: var(--darkSlateGrey);
+  padding-bottom: 50px;
+}
+.form--label {
+  font-weight: 700;
+}
+.icon-list {
+  padding-right: 25px;
+}
+.input--field {
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.input--submit {
+  background-color: var(--darkSlateGrey);
+  color: var(--white);
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+.input--submit:hover {
+  background-color: var(--tomato);
+  cursor: pointer;
+}
+.list-item {
+  padding-bottom: 20px;
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
