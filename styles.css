@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-size: 24px;
+  border-radius: 25px;
 }
 :root {
   /* Colors */
@@ -27,12 +28,26 @@ li {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+.btn {
+  background-color: var(--darkSlateGrey);
+  color: var(--white);
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background-color: var(--tomato);
+  cursor: pointer;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
 .container {
   display: grid;
   place-items: center;
   grid-template-columns: 2fr 1fr;
   background-color: var(--white);
-  border-radius: 25px;
+  border-radius: inherit;
   padding: 25px;
 }
 .content--heading {
@@ -50,6 +65,9 @@ li {
 .form--label {
   font-weight: 700;
 }
+.hidden {
+  display: none;
+}
 .icon-list {
   padding-right: 25px;
 }
@@ -59,24 +77,29 @@ li {
   border-radius: 10px;
   margin-top: 25px;
 }
-.input--submit {
-  background-color: var(--darkSlateGrey);
-  color: var(--white);
-  padding: 15px;
-  width: 100%;
-  border-radius: 10px;
-  margin-top: 25px;
-  transition: 0.3s;
-}
-.input--submit:hover {
-  background-color: var(--tomato);
-  cursor: pointer;
-}
 .list-item {
   padding-bottom: 20px;
 }
 .main-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 6rem;
+  border-radius: inherit;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.modal-icon {
+  width: 75px;
+}
+.user-email {
+  font-weight: 700;
 }

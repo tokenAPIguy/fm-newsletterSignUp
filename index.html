@@ -16,6 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
@@ -25,10 +26,12 @@
       <div class="container">
         <div class="col">
           <div class="content--body">
-            <h1 class="content--heading">Stay updated!</h1>
-            <p class="content--subheading">
-              Join 60,000+ product managers receiving monthly updates on:
-            </p>
+            <span><p class="content--heading">Stay updated!</p></span>
+            <span
+              ><p class="content--subheading">
+                Join 60,000+ product managers receiving monthly updates on:
+              </p></span
+            >
             <ul>
               <li class="list-item">
                 <img
@@ -54,20 +57,14 @@
             </ul>
           </div>
           <div class="form--container">
-            <label for="email" class="form--label">Email address</label>
-            <form action="">
-              <input
-                type="email"
-                name="emailAddress"
-                placeholder="email@company.com"
-                class="input--field"
-              />
-              <input
-                type="submit"
-                value="Subscribe to monthly newsletter"
-                class="input--submit"
-              />
-            </form>
+            <p class="form--label">Email address</p>
+            <input
+              type="email"
+              name="emailAddress"
+              placeholder="email@company.com"
+              class="input--field"
+            />
+            <button class="btn submit">Subscribe to monthly newsletter</button>
           </div>
         </div>
         <div class="col">
@@ -77,20 +74,27 @@
           />
         </div>
       </div>
-    </div>
-    <!-- Success message start -->
-
-    Thanks for subscribing! A confirmation email has been sent to
-    ash@loremcompany.com. Please open it and click the button inside to confirm
-    your subscription. Dismiss message
-
-    <!-- Success message end -->
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Jake Levy</a>.
+      <div class="modal hidden">
+        <img
+          src="assets\images\icon-list.svg"
+          alt="icon-list"
+          class="icon-list modal-icon"
+        />
+        <span><p class="content--heading">Thanks for subscribing!</p></span>
+        <span
+          ><p>
+            A confirmation email has been sent to email@company.com
+            <span class="user-email"></span>. Please open it and click the
+            button inside to confirm your subscription.
+          </p></span
+        ><button class="btn dismiss">Dismiss Message</button>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Jake Levy</a>.
+      </div>
     </div>
   </body>
 </html>
